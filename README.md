@@ -1,16 +1,61 @@
-# React + Vite
+# Portfolio — Muhammad Ali Shah
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio built as a React single-page app, styled like a codebase — a terminal-style hero, experience shown as a git log, projects as repo cards, and skills as a `package.json`.
 
-Currently, two official plugins are available:
+**Live site:** [your-vercel-url-here](#)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Built with
 
-## React Compiler
+- React (Vite)
+- Tailwind CSS
+- [lucide-react](https://lucide.dev/) for icons
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Terminal-style typewriter intro
+- Scroll-reveal animations on each section
+- Experience displayed as a commit history
+- Project cards with tech stack tags and links to source/live demos
+- One-click resume download
+- Fully responsive, dark theme
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting started
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/syedali067/your-repo-name.git
+cd your-repo-name
+npm install
+```
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Project structure
+
+```
+├── public/
+│   └── Muhammad_Ali_Shah_CV.pdf
+├── src/
+│   ├── App.jsx
+│   ├── Portfolio.jsx
+│   └── index.css
+├── index.html
+└── vite.config.js
+```
+
+## Contact
+
+- Email: muhammadali.mern067@gmail.com
+- LinkedIn: [linkedin.com/in/muhammad-ali-mern067](https://linkedin.com/in/muhammad-ali-mern067)
+- GitHub: [github.com/syedali067](https://github.com/syedali067)
