@@ -2,7 +2,7 @@
 
 A personal developer portfolio built as a React single-page app, styled like a codebase — a terminal-style hero, experience shown as a git log, projects as repo cards, and skills as a `package.json`.
 
-**Live site:** [https://my-portfolio-ali067.vercel.app/](#)
+**Live site:** [https://my-portfolio-one-beige-0a51mis9gs.vercel.app/](#)
 
 ## Built with
 
