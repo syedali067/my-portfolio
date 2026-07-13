@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Copy, Check, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Copy, Check, Download, Menu, X } from "lucide-react";
 
 const CMD = "whoami";
 
@@ -135,6 +135,7 @@ const skills = {
 export default function Portfolio() {
   const { out, done } = useTypewriter(CMD);
   const [copied, setCopied] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const copyEmail = () => {
     navigator.clipboard?.writeText("muhammadali.mern067@gmail.com").catch(() => {});
@@ -282,7 +283,23 @@ export default function Portfolio() {
             <a href="#skills" className="nav-link">skills</a>
             <a href="#contact" className="nav-link">contact</a>
           </div>
+          <button
+            className="sm:hidden link-icon"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
+        {menuOpen && (
+          <div className="sm:hidden flex flex-col px-5 pb-4 gap-3.5 border-t" style={{ borderColor: "var(--border)" }}>
+            <a href="#about" className="nav-link pt-3.5" onClick={() => setMenuOpen(false)}>about</a>
+            <a href="#experience" className="nav-link" onClick={() => setMenuOpen(false)}>experience</a>
+            <a href="#projects" className="nav-link" onClick={() => setMenuOpen(false)}>projects</a>
+            <a href="#skills" className="nav-link" onClick={() => setMenuOpen(false)}>skills</a>
+            <a href="#contact" className="nav-link" onClick={() => setMenuOpen(false)}>contact</a>
+          </div>
+        )}
       </nav>
 
       {/* HERO */}
